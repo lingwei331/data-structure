@@ -1,19 +1,19 @@
 class Solution
 {
-    private final String[] lessThanTen=new String[]{"","One","Two","Three","Four","Five",
+    private String[] lessThanTen=new String[]{"","One","Two","Three","Four","Five",
             "Six","Seven","Eight","Nine"};
-    private final String[] lessThanTwenty=new String[]{"Ten","Eleven","Twelve","Thirteen",
+    private String[] lessThanTwenty=new String[]{"Ten","Eleven","Twelve","Thirteen",
             "Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
-    private final String[] lessThanHundred=new String[]{"","Ten","Twenty","Thirty","Forty",
+    private String[] lessThanHundred=new String[]{"","Ten","Twenty","Thirty","Forty",
             "Fifty","Sixty","Seventy","Eighty","Ninety"};
     public String numberToWords(int num)
     {
         if (num == 0) {
             return "Zero";
         }
-        return nw(num);
+        return rec(num);
     }
-    private String nw(int num)
+    private String rec(int num)
     {
 
         String res=new String();
